@@ -1,0 +1,1239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Builder</title>
+
+    <link rel="stylesheet" href="../FRONTEND/style.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================================
+         BACKGROUND
+    ================================= -->
+
+    <div class="background-effects">
+
+        <div class="glow glow-one"></div>
+
+        <div class="glow glow-two"></div>
+
+    </div>
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <span>AI</span>
+            </div>
+
+            <div class="logo-text">
+
+                <h2>Resume<span>AI</span></h2>
+
+                <p>Smart Resume Builder</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="navbar-right">
+
+            <span class="status-indicator"></span>
+
+            <span class="status-text">
+                Resume Editor
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         MAIN
+    ================================= -->
+
+    <main class="main-container">
+
+
+        <!-- ================================
+             PAGE HEADER
+        ================================= -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="eyebrow">
+
+                    <span class="eyebrow-dot"></span>
+
+                    AI POWERED RESUME BUILDER
+
+                </span>
+
+                <h1>
+
+                    Build Your
+
+                    <span class="gradient-text">
+                        Professional Resume
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Create your resume, generate AI career objectives,
+                    check ATS readiness and download your professional resume.
+
+                </p>
+
+            </div>
+
+
+            <div class="header-badge">
+
+                <div class="badge-icon">
+                    ✨
+                </div>
+
+                <div>
+
+                    <strong>Smart Resume</strong>
+
+                    <span>AI Assisted</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================
+             WORKSPACE
+        ================================= -->
+
+        <section class="workspace">
+
+
+            <!-- ================================
+                 LEFT FORM PANEL
+            ================================= -->
+
+            <div class="editor-panel">
+
+
+                <!-- PANEL HEADER -->
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            RESUME EDITOR
+                        </span>
+
+                        <h2>Enter Your Details</h2>
+
+                        <p>
+                            Complete your information to build your resume.
+                        </p>
+
+                    </div>
+
+                    <div class="editor-icon">
+                        ✎
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================
+                     PERSONAL INFORMATION
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon blue">
+                            👤
+                        </div>
+
+                        <div>
+
+                            <h3>Personal Information</h3>
+
+                            <p>
+                                Your contact and professional details
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PHOTO -->
+
+                    <div class="photo-upload-area">
+
+                        <div id="photoPlaceholder"
+                             class="photo-placeholder">
+
+                            👤
+
+                        </div>
+
+
+                        <div class="photo-upload-content">
+
+                            <h4>Profile Photo</h4>
+
+                            <p>
+                                JPG, PNG or WEBP · Maximum 5 MB
+                            </p>
+
+                            <label for="photoInput"
+                                   class="upload-button">
+
+                                <span>📷</span>
+
+                                Upload Photo
+
+                            </label>
+
+
+                            <input
+                                type="file"
+                                id="photoInput"
+                                accept="image/jpeg,image/png,image/webp"
+                                hidden>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+
+                            Full Name
+
+                            <span class="required">*</span>
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name">
+
+                    </div>
+
+
+
+                    <!-- JOB TITLE -->
+
+                    <div class="form-group">
+
+                        <label for="jobTitle">
+
+                            Professional Title
+
+                            <span class="required">*</span>
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="jobTitle"
+                            placeholder="Java Developer">
+
+                    </div>
+
+
+
+                    <!-- EMAIL AND PHONE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+
+                                Email Address
+
+                                <span class="required">*</span>
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="example@gmail.com">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+
+                                Phone Number
+
+                                <span class="required">*</span>
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="+91 9876543210">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label for="location">
+
+                            Location
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Chennai, Tamil Nadu">
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     CAREER OBJECTIVE
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon purple">
+                            🎯
+                        </div>
+
+                        <div>
+
+                            <h3>Career Objective</h3>
+
+                            <p>
+                                Write your professional career goal
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="objective">
+
+                            Career Objective
+
+                        </label>
+
+                        <textarea
+                            id="objective"
+                            rows="5"
+                            placeholder="Write your career objective here..."></textarea>
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="ai-btn"
+        onclick="generateObjective()">
+
+                        <span>✨</span>
+
+                        Generate AI Objective
+
+                    </button>
+
+                </section>
+
+
+
+                <!-- ================================
+                     EDUCATION
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon green">
+                            🎓
+                        </div>
+
+                        <div>
+
+                            <h3>Education</h3>
+
+                            <p>
+                                Add your academic qualifications
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="degree">
+
+                            Degree
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="degree"
+                            placeholder="B.E Computer Science">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="college">
+
+                            College / University
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="college"
+                            placeholder="College Name">
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="graduation">
+
+                                Graduation Year
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="graduation"
+                                placeholder="2026">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="percentage">
+
+                                Percentage / CGPA
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="percentage"
+                                placeholder="85% / 8.5 CGPA">
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     SKILLS
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon orange">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <h3>Technical Skills</h3>
+
+                            <p>
+                                Add your technical and professional skills
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="skills">
+
+                            Skills
+
+                        </label>
+
+                        <textarea
+                            id="skills"
+                            rows="4"
+                            placeholder="Java, MySQL, HTML, CSS, JavaScript"></textarea>
+
+                        <small class="input-help">
+
+                            Separate each skill using a comma.
+
+                        </small>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     EXPERIENCE
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon blue">
+                            💼
+                        </div>
+
+                        <div>
+
+                            <h3>Professional Experience</h3>
+
+                            <p>
+                                Add your work experience
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="experience">
+
+                            Job Role
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="experience"
+                            placeholder="Software Developer">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="company">
+
+                            Company Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="company"
+            placeholder="Company Name">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="experienceDescription">
+
+                            Responsibilities
+
+                        </label>
+
+                        <textarea
+                            id="experienceDescription"
+                            rows="5"
+                            placeholder="Describe your work experience, responsibilities and achievements..."></textarea>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     PROJECTS
+                ================================= -->
+
+                <section class="form-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-icon purple">
+                            🚀
+                        </div>
+
+                        <div>
+
+                            <h3>Projects</h3>
+
+                            <p>
+                                Showcase your projects and achievements
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="project">
+
+                            Project Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="project"
+                            placeholder="AI Resume Builder">
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="projectDescription">
+
+                            Project Description
+
+                        </label>
+
+                        <textarea
+                            id="projectDescription"
+                            rows="5"
+                            placeholder="Describe your project, technologies used and achievements..."></textarea>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ================================
+                     ACTION BUTTONS
+                ================================= -->
+
+                <section class="form-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        onclick="clearForm()">
+
+                        <span>🗑</span>
+
+                        Clear Form
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        onclick="saveResume()">
+
+                        <span>💾</span>
+
+                        Save Resume
+
+                    </button>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 RIGHT PREVIEW PANEL
+            ================================= -->
+
+            <div class="preview-panel">
+
+
+                <!-- PREVIEW HEADER -->
+
+                <div class="preview-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            LIVE PREVIEW
+                        </span>
+
+                        <h2>Your Resume</h2>
+
+                        <p>
+                            Your resume updates automatically
+                        </p>
+
+                    </div>
+
+
+                    <div class="live-indicator">
+
+                        <span></span>
+
+                        LIVE
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================
+                     RESUME DOCUMENT
+                ================================= -->
+
+                <div class="resume-wrapper">
+
+
+                    <div class="resume-document"
+                         id="resumeDocument">
+
+
+                        <!-- RESUME HEADER -->
+
+                        <header class="resume-header">
+
+
+                            <div class="resume-header-info">
+
+
+                                <h1 id="previewName">
+
+                                    Your Name
+
+                                </h1>
+
+
+                                <h2 id="previewJob">
+
+                                    Professional Title
+
+                                </h2>
+
+
+                                <div class="resume-contact">
+
+
+                                    <span id="previewEmail"></span>
+
+
+                                    <span id="previewPhone"></span>
+
+
+                                    <span id="previewLocation"></span>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- RESUME PHOTO -->
+
+                            <div id="previewPhoto"
+                                 class="resume-photo">
+
+                                👤
+
+                            </div>
+
+
+                        </header>
+
+
+
+                        <!-- CAREER OBJECTIVE -->
+
+                        <section class="resume-section">
+
+                            <h3 class="resume-section-title">
+
+                                Career Objective
+
+                            </h3>
+
+
+                            <p id="previewObjective">
+
+                                Career objective not provided.
+
+                            </p>
+
+                        </section>
+
+
+
+                        <!-- EDUCATION -->
+
+                        <section class="resume-section">
+
+                            <h3 class="resume-section-title">
+
+                                Education
+
+                            </h3>
+
+
+                            <div class="resume-item">
+
+                                <h4 id="previewDegree">
+
+                                    Degree
+
+                                </h4>
+
+
+                                <p id="previewCollege"></p>
+
+
+                                <div class="resume-meta">
+
+                                    <span id="previewGraduation"></span>
+
+
+                                    <span id="previewPercentage"></span>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- SKILLS -->
+
+                        <section class="resume-section">
+
+                            <h3 class="resume-section-title">
+
+                                Technical Skills
+
+                            </h3>
+
+
+                            <div id="previewSkills"
+                                 class="resume-skills">
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- EXPERIENCE -->
+
+                        <section class="resume-section">
+
+                            <h3 class="resume-section-title">
+
+                                Professional Experience
+
+                            </h3>
+
+
+                            <div class="resume-item">
+
+                                <h4 id="previewExperience">
+
+                                    Professional Experience
+
+                                </h4>
+
+
+                                <p id="previewCompany"></p>
+
+
+                                <p id="previewExperienceDescription"></p>
+
+                            </div>
+
+                        </section>
+
+
+
+                        <!-- PROJECTS -->
+
+                        <section class="resume-section">
+
+                            <h3 class="resume-section-title">
+
+                                Projects
+
+                            </h3>
+
+
+                            <div class="resume-item">
+
+                                <h4 id="previewProject">
+
+                                    Project Name
+
+                                </h4>
+
+
+                                <p id="previewProjectDescription"></p>
+
+                            </div>
+
+                        </section>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ================================
+                     DOWNLOAD BUTTON
+                ================================= -->
+
+                <div class="preview-actions">
+
+
+                    <button
+                        type="button"
+                        class="download-button"
+                        onclick="downloadResume()">
+
+                        <span>⬇</span>
+
+                        Download Resume / PDF
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- ================================
+                     ATS SCORE CHECKER
+                ================================= -->
+
+                <section class="ats-section">
+
+
+                    <div class="ats-heading">
+
+
+                        <div class="ats-heading-icon">
+
+                            🎯
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="panel-label">
+
+                                RESUME ANALYSIS
+
+                            </span>
+
+
+                            <h2>
+
+                                ATS Score Checker
+
+                            </h2>
+
+
+                            <p>
+
+                                Analyze your resume completeness and identify missing information.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ATS BUTTON -->
+
+                    <button
+                        type="button"
+                        class="ats-btn"
+                        onclick="checkATSScore()">
+
+                        <span>✨</span>
+
+                        Check ATS Score
+
+                    </button>
+
+
+
+                    <!-- ATS RESULT -->
+
+                    <div id="atsResult"
+                         class="ats-result">
+
+
+                        <!-- SCORE -->
+
+                        <div class="ats-score-area">
+
+
+                            <div class="ats-score-circle">
+
+
+                                <span id="atsScore">
+
+                                    0%
+
+                                </span>
+
+
+                            </div>
+
+
+                            <h3 id="atsMessage">
+
+                                Complete your resume to check ATS score.
+
+                            </h3>
+
+
+                        </div>
+
+
+
+                        <!-- PROGRESS -->
+
+                        <div class="ats-progress">
+
+                            <div id="atsProgressBar"></div>
+
+                        </div>
+
+
+
+                        <!-- CHECKLIST -->
+
+                        <div class="ats-content-section">
+
+
+                            <h3>
+
+                                <span>✓</span>
+
+                                Resume Checklist
+
+                            </h3>
+
+
+                            <div id="atsChecklist"></div>
+
+
+                        </div>
+
+
+
+                        <!-- SUGGESTIONS -->
+
+                        <div class="ats-content-section">
+
+
+                            <h3>
+
+                                <span>💡</span>
+
+                                Improvement Suggestions
+
+                            </h3>
+
+
+                            <div id="atsSuggestions"></div>
+
+
+                        </div>
+
+
+
+                        <!-- DISCLAIMER -->
+
+                        <div class="ats-disclaimer">
+
+                            <span>ⓘ</span>
+
+                            This is a basic resume completeness score.
+                            It does not guarantee ATS compatibility
+                            or job selection.
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================================
+         TOAST
+    ================================= -->
+
+    <div id="toast"
+         class="toast">
+
+        Resume saved successfully!
+
+    </div>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <p>
+
+            Made with
+
+            <span>♥</span>
+
+            using ResumeAI
+
+        </p>
+
+        <p>
+
+            Build your future, one resume at a time.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script src="../FRONTEND/script.js"></script>
+
+
+</body>
+
+</html>
